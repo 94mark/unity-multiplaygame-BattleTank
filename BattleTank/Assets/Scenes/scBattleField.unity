@@ -251,6 +251,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1323849410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323849411}
+  m_Layer: 0
+  m_Name: FirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323849411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323849410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.176, z: 9.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1681299734}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324568322
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +472,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400018, guid: 0ae81aed6df404dca852a1d6c8bbba56, type: 3}
   m_PrefabInstance: {fileID: 1356852916}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1356852926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356852917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494dbfc2817f1364eb0d11b89751e628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannon: {fileID: 1681299733}
+  firePos: {fileID: 1323849411}
 --- !u!1 &1470105850
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +599,11 @@ Transform:
 --- !u!1 &1681299733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0ae81aed6df404dca852a1d6c8bbba56, type: 3}
+  m_PrefabInstance: {fileID: 1356852916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1681299734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 0ae81aed6df404dca852a1d6c8bbba56, type: 3}
   m_PrefabInstance: {fileID: 1356852916}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1681299735
