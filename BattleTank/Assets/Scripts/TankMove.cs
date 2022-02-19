@@ -21,6 +21,7 @@ public class TankMove : MonoBehaviour
         rbody = GetComponent<Rigidbody>();
         tr = GetComponent<Transform>();
         rbody.centerOfMass = new Vector3(0.0f, 0.5f, 0.0f);
+        pv = GetComponent<PhotonView>();
 
         if(pv.IsMine)
         {
