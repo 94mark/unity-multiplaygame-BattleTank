@@ -35,6 +35,13 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         Debug.Log("Enter Room");
+        CreateTank();
+    }
+
+    void CreateTank()
+    {
+        float pos = Random.Range(-100.0f, 100.0f);
+        PhotonNetwork.Instantiate("Tank", new Vector3(pos, 20.0f, pos), Quaternion.identity, 0);
     }
 
     // Update is called once per frame

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using UnityStandardAssets.Utility;
 
 public class TankMove : MonoBehaviour
 {
@@ -10,12 +12,20 @@ public class TankMove : MonoBehaviour
     private Transform tr;
     private float h, v;
 
+    private PhotonView pv = null;
+    public Transform camPivot;
+
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
         tr = GetComponent<Transform>();
         rbody.centerOfMass = new Vector3(0.0f, 0.5f, 0.0f);
+
+        if(pv.IsMine)
+        {
+            Camera.main.GetComponent<SmoothFollow>().target = camPivot;
+        }
     }
 
     // Update is called once per frame
