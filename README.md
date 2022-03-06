@@ -15,8 +15,15 @@
  - 프로토타입 버전 : 탱크 이동/포 사격 등 기본 기능 구현
  - 알파 타입 버전 : 멀티플레이 환경 구현 
 ## 3. 핵심 구현 내용 
-### 3.1 
-- 
+### 3.1 멀티플레이 환경 구축
+- Photon PUN2 네트워크 환경 세팅
+### 3.2 탱크 조작 기능 구현
+- 카메라 세팅
+	+ Rotation Damping값을 조절해 이동 및 회전 시 동적인 느낌 구현
+- 탱크 이동
+	- Rotate(Vector3.up)과 Translate(Vector3.forward) 함수를 사용하여 탱크 이동 및 회전 기능 구현
+	- Rigidbody의 centerofMass y값을 -0.5f, 질량값을 5000을 주어 무게중심이 낮은 묵직한 움직임 연출
+	- Photon View 컴포넌트를 NetworkView.isMine의 bool 타입으로 비교해 로컬 클라이언트 동기화
 ## 4. 문제 해결 내용
 ### 4.1 
 - 
