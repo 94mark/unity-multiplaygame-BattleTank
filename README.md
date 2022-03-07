@@ -41,7 +41,7 @@
 - LookAt 함수를 사용하여 위치 및 회전과 상관 없게 Player의 체력 바를 메인 카메라가 바라볼 수 있도록 설정, User ID가 함께 활성화
 - 탱크 체력이 0일 경우, ExplosionTank() 코루틴 함수 실행
 - ExplosionTank() 함수는 탱크 파괴 시, 폭발 효과 실행, HUD 비활성화 및 탱크 MeshRenderer의 isVisible을 false로 해 투명 처리 -> 3초 후 최초 체력 복귀와 함께 HUD 및 탱크를 활성화하여 Respawn
-### 로비 Scene 구현 및 메인 Scene 입장
+### 3.4 로비 Scene 구현 및 메인 Scene 입장
 - User ID 입력 후 Join Random Room(MaxPlayers = 20) 입장
 - 방 입장 시 LoadBattleField() 코루틴 함수 실행, 씬을 이동하는 동안 포톤 클라우드 서버로부터 네트워크 메시지 수신 중단 및 백그라운드로 비동기 씬 로딩
 - 메인 씬에서 GameManager 클래스 구현, Random.Range(-100.0f, 100.0f)에서 최초 탱크 생성
