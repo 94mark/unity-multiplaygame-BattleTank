@@ -1,6 +1,6 @@
 # 3D 배틀탱크 멀티플레이 대전 게임 제작
 ![imge1](https://user-images.githubusercontent.com/90877724/156958802-70af56f0-e1ad-450e-b209-bba35791896e.png)
-![imge2](https://user-images.githubusercontent.com/90877724/156958822-83df5908-935f-417d-b119-3859ad5bf353.png)
+![imge2](https://user-images.githubusercontent.com/90877724/156959285-9d46d0de-41ce-41b2-9bb8-520b1769a566.png)
 
 ## 1. 프로젝트 개요
 ### 1.1 개발 인원/기간 및 포지션
